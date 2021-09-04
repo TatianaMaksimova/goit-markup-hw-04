@@ -3,6 +3,7 @@
   --secondary-text-color: #757575;
   --bgd-text-color: #ffffff;
   --accent-color: #2196f3;
+  --icon-fon: #f5f4fa;
 }
 
 body {
@@ -160,8 +161,40 @@ p {
   display: flex;
 }
 
-.text-list {
+/* .text-list {
   width: 270px;
+} добавлено в ниже свойство*/
+
+.text-list::before {
+  margin-bottom: 30px;
+  display: block;
+  content: '';
+  width: 270px;
+  height: 120px;
+  /* background-image: url(../images/antenna.svg); */
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--icon-fon);
+  border-radius: 4px;
+
+  /* outline: 1px solid teal; */
+}
+
+.text-list:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.text-list:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.text-list:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.text-list:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .text-list:not(:last-child) {
