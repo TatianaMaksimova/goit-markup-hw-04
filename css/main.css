@@ -98,7 +98,14 @@ p {
 }
 
 .link.item {
+  padding: 0;
+  border: none;
   color: var(--secondary-text-color);
+}
+
+.icon-contacts {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .link:hover,
@@ -123,6 +130,18 @@ p {
   padding-bottom: 200px;
   background-color: #2f303a;
   text-align: center;
+}
+
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .ban-button {
@@ -263,14 +282,13 @@ p {
   display: inline-block;
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
-
 
 /* ПОРТФОЛИО (MAIN) */
 a {
