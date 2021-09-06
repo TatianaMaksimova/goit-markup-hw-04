@@ -102,6 +102,8 @@ p {
   display: flex;
   align-items: center;
   padding: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
   border: none;
   color: var(--secondary-text-color);
 }
@@ -481,8 +483,12 @@ a {
 
 .links-foot-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between;
+  align-items: center; */
+}
+
+.links-foot-list .links-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .links-foot-icon {
